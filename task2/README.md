@@ -21,7 +21,7 @@ The schema consists of three tables: users, articles, and comments. Relationship
     ```
 3. To run any of the queries:
     ```bash
-    psql -U your_username -d your_database_name -f articles.sql
-    psql -U your_username -d your_database_name -f comments.sql
-    psql -U your_username -d your_database_name -f latest_5_articles.sql
+    psql -U your_username -d your_database_name -f queries/articles.sql
+    psql -U your_username -d your_database_name -f queries/comments.sql
+    psql -U your_username -d your_database_name -f queries/latest_5_articles.sql
     ```
