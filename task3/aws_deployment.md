@@ -60,7 +60,47 @@
     output.txt
   ```
 
+## S3 bucket setup and permissions 
 
+- Navigate to S3 dashboard
+
+  <img width="1628" alt="Image" src="https://github.com/user-attachments/assets/fc231880-9613-4aab-a378-d06707083d82" />
+
+- Proceed to create bucket
+
+  <img width="1628" alt="Image" src="https://github.com/user-attachments/assets/6fefdd01-5bf3-49de-9def-b4aa6706afad" />
+
+- Configure permissions
+  
+  <img width="1628" alt="Image" src="https://github.com/user-attachments/assets/2b50bde1-61fa-4542-aee2-2801c593b91f" />
+
+  <img width="1628" alt="Image" src="https://github.com/user-attachments/assets/85565f7d-ef97-4bde-82bb-c9020653237e" />
+
+
+## RDS database instance configuration 
+- Navigate to VPC dashboard
+- On the left menu navigate to security groups and create new security group
+
+  <img width="1628" alt="Image" src="https://github.com/user-attachments/assets/0b79c734-ac72-4306-b6e9-fae3c8341809" />
+
+- Configure inbound rules for both IPV4 and IPV6
+
+  <img width="1628" alt="Image" src="https://github.com/user-attachments/assets/c81a34bc-024f-477c-95a3-f37d1e30c985" />
+
+- Navigate to RDS dashboard
+- Proceed to create database
+
+  <img width="1628" alt="Image" src="https://github.com/user-attachments/assets/017a8eb2-c4a6-47bc-ac5d-06cc2cd7db98" />
+
+  <img width="1628" alt="Image" src="https://github.com/user-attachments/assets/28e101af-1578-4f69-b0a8-fa72a9166552" />
+
+- Set db instance password
+- On storage disable auto-scaling
+- Enable public access and give access to the VPC security group previously created
+  
+  <img width="1628" alt="Image" src="https://github.com/user-attachments/assets/9379ec2c-d732-4148-b5b9-bbf838f40c5c" />
+
+  <img width="1628" alt="Image" src="https://github.com/user-attachments/assets/1660d8f7-c41e-4960-a008-9c3e760a3471" />
 
 
 ##  IAM role and policy settings
