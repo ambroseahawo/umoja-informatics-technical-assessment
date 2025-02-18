@@ -33,9 +33,23 @@ These models enforce data integrity with constraints and validations while maint
 
     ```bash
     Create new user: POST /api/v1/auth/register
+
+    {
+      "name": "Juliet Ross",
+      "email": "juliet.ross@gmail.com",
+      "role": "admin",
+      "password": "Kpass2000$"
+    }
+
     ```
     ```bash
     Login for access token: POST /api/v1/auth/login
+
+    {
+      "email": "juliet.ross@gmail.com",
+      "password": "Kpass2000$"
+    }
+
     ```
 
     ```bash
