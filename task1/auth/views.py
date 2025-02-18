@@ -57,12 +57,7 @@ def login():
 @jwt_required()
 def get_user(id):
     """Fetches details of a specific user by ID."""
-    current_user_id = get_jwt_identity()
-    print(str(id) == str(current_user_id))
-
-    # Check if the user trying to access the data is authorized
-    if str(current_user_id) != str(id):
-        return jsonify({"error": "Unauthorized to view this user's details"}), 403
+    get_jwt_identity()
 
     user = User.query.get(str(id))
 
